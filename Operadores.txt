@@ -1,0 +1,73 @@
+expresiones : 
+
+
+Aritmeticas : 
++ , - , * , / 
+
+
+Relacionales: 
+> , < , >= , <= , != , ==
+
+
+Ejemplo : 
+
+si a = 10 , b = 20  y c = 30 ;
+
+ a + b > c  False 
+ a - b < c  True
+ a - b == c False
+ a * b != c True
+ 	
+Lógicas : AND , OR , NOT
+
+si a = 10 , b = 20  y c = 30 ;
+    
+  (a < b ) AND ( b < c )
+     V     AND     V
+            V
+
+
+Prioridad de los operadores Lógicos : 
+1) NOT 
+2) AND
+3) OR
+
+Prioridad de los operadores en general : 
+1- ()
+2- * ,  / , NOT
+3- + , - , AND
+4- < , > , >= , <= , != , == , OR
+
+
+
+Ejemplos :
+si a = 10 , b = 12  , c = 13 , d = 10 
+
+1) ((a > b )or ( a < c )) AND ((a == c) OR (a >= b )) 
+       ( F    or     V  ) AND  (   F    OR   F ) 
+               V          AND       F
+		         FALSE
+
+2) ((a >= b ) or (a < d ))  AND  ((a >= d) and ( c > d ))
+       (F     or   F )     AND    ( V     and  V )	
+		F          AND       V
+                          False
+
+3) not (a == c) and (c > b)
+        not( F) and   V
+              V and V
+                 V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
